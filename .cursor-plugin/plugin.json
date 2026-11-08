@@ -1,0 +1,26 @@
+{
+  "name": "kleos",
+  "displayName": "Kleos",
+  "version": "1.0.0",
+  "description": "AI marketing team for small businesses. Plan your content month, draft posts and articles in your voice, approve and publish them, see results, and check whether ChatGPT and other AI assistants recommend your business, all from your editor.",
+  "author": {
+    "name": "Kleos (New Odyssey)",
+    "email": "support@getkleos.ai",
+    "url": "https://getkleos.ai"
+  },
+  "homepage": "https://getkleos.ai/agents",
+  "repository": "https://github.com/NewOdysseyConsulting/kleos-mcp",
+  "license": "MIT",
+  "logo": "assets/kleos.png",
+  "keywords": ["marketing", "content", "social-media", "linkedin", "seo", "ai-visibility", "small-business", "mcp"],
+  "category": "productivity",
+  "tags": ["marketing", "content", "mcp", "small-business"],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "mcpServers": {
+    "kleos": {
+      "type": "http",
+      "url": "https://app.getkleos.ai/mcp"
+    }
+  }
+}
