@@ -47,7 +47,14 @@ and approval rules to everything an assistant does.
 
 ## Links
 
-- Website: https://getkleos.ai
-- Setup guide: https://getkleos.ai/agents
-- Privacy: https://getkleos.ai/privacy
-- Support: support@getkleos.ai
+- **Website:** [getkleos.ai](https://getkleos.ai)
+- **Start free (see your content plan first):** [getkleos.ai/start](https://getkleos.ai/start)
+- **Sign up:** [app.getkleos.ai/signup](https://app.getkleos.ai/signup)
+- **Pricing:** [getkleos.ai/pricing](https://getkleos.ai/pricing)
+- **Use Kleos from AI assistants:** [getkleos.ai/agents](https://getkleos.ai/agents) · [Claude](https://getkleos.ai/claude) · [ChatGPT](https://getkleos.ai/chatgpt)
+- **Integrations:** [getkleos.ai/integrations](https://getkleos.ai/integrations)
+- **Partner programme:** [getkleos.ai/partners](https://getkleos.ai/partners)
+- **Privacy:** [getkleos.ai/privacy](https://getkleos.ai/privacy) · **Security:** [getkleos.ai/security](https://getkleos.ai/security)
+- **Support:** support@getkleos.ai
+
+Kleos is made by [New Odyssey](https://new-odyssey.com).

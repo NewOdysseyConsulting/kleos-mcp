@@ -1,0 +1,68 @@
+{
+  "identifier": "kleos",
+  "name": "Kleos",
+  "version": "1.0.0",
+  "description": "AI marketing team for small businesses. Plan your content month, draft posts and articles in your voice, approve and publish them, see results, and check whether ChatGPT and other AI assistants recommend your business.",
+  "author": "Kleos (New Odyssey)",
+  "authorUrl": "https://getkleos.ai",
+  "homepage": "https://getkleos.ai/agents",
+  "icon": "https://getkleos.ai/brand/kleos-icon-512.png",
+  "cloudEndpoint": "https://app.getkleos.ai/mcp",
+  "tags": [
+    "marketing",
+    "content",
+    "social-media",
+    "linkedin",
+    "seo",
+    "ai-visibility",
+    "small-business"
+  ],
+  "tools": [
+    {
+      "name": "list_businesses",
+      "description": "Lists the businesses in this Kleos workspace with their id, website, Autopilot level and the channels in their plan. Use an id (or the exact name) as business_id in the other tools."
+    },
+    {
+      "name": "get_month_plan",
+      "description": "Reads a business's calendar for a month (or a week): every planned post, article, newsletter and video with its channel, date, time and status (planned, drafting, waiting for review, approved, scheduled, published)."
+    },
+    {
+      "name": "plan_my_month",
+      "description": "Runs Kleos's Plan your month for a business: plans the next 30 days on the channels you name (or the ones already on), within the plan's allowance. mode \"add\" fills open dates and keeps what's planned; \"rebuild\" replans the rest of the month and keeps approved, scheduled and edited pieces. Changing which channels are on needs an admin. Runs in the background; the calendar updates in a minute or two."
+    },
+    {
+      "name": "draft_post",
+      "description": "Asks Kleos to write a social post on a topic, or about one of the business's buyer problems (problem_id from get_buyers_and_problems), on the business's social channel. It goes through Kleos's writer, checks and automatic repair, then waits for review like any other draft. Uses one post from the plan's allowance. Returns the draft when it is ready within the wait, otherwise its id to look up in list_review_queue."
+    },
+    {
+      "name": "draft_article",
+      "description": "Asks Kleos to research and write a blog article on a topic or search phrase: brief, search research, article with FAQ and checks, then review. Uses one article from the plan's allowance. Takes a few minutes; the article appears in list_review_queue when it is ready. If the business already has an article for the same search, or a sister business covers it and the workspace asks for a reason, Kleos says so first, as the app does."
+    },
+    {
+      "name": "list_review_queue",
+      "description": "Lists the drafts waiting for review (posts, articles and newsletters) for one business or all of them, with each draft's title, excerpt, channel, planned time and whether it is ready to approve or needs a fix first."
+    },
+    {
+      "name": "approve_draft",
+      "description": "Approves a post, article or newsletter waiting for review, exactly as Approve in the app: a draft its checks flagged can't be approved until it's fixed. After approval the business's own publishing settings apply: with auto-publish on, Kleos schedules it on the connected channel; otherwise it stays approved for someone to schedule."
+    },
+    {
+      "name": "schedule_post",
+      "description": "Schedules an approved post on its connected channel, at its planned time or now, as Publish in the app does. Give date and time to move it on the calendar first. Needs an admin (publishing permission) and a connected channel."
+    },
+    {
+      "name": "get_results",
+      "description": "Reports what a business's content did over a period (7 to 365 days, default 30): posts published, impressions, clicks and engagements the connected networks reported, and leads and won deals credited to Kleos's links."
+    },
+    {
+      "name": "check_ai_visibility",
+      "description": "Reports whether AI assistants (ChatGPT, Google AI Mode, Perplexity and the others on the plan) name and cite the business when asked its buyers' questions: the latest check, the trend and the split by question intent. With run_now, starts a new check on the business's weekly question list, which uses AI answers from the plan's allowance and takes a few minutes."
+    },
+    {
+      "name": "get_buyers_and_problems",
+      "description": "Reads who the business sells to (its buyers, with roles, industries and what they want) and each buyer's problems in priority order, with what backs each one (reviews, threads, the business's own notes) and whether it's confirmed or a guess."
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}
