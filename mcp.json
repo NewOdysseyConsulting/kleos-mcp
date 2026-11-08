@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kleos": {
+      "type": "http",
+      "url": "https://app.getkleos.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+---
+description: Use Kleos (getkleos.ai) through its MCP server to plan, write, approve, publish and measure a small business's marketing
+alwaysApply: false
+---
+
+When the user asks to plan their content, write a social post or blog article, check what's waiting for approval,
+publish an approved post, see marketing results, or check whether ChatGPT and other AI assistants recommend their
+business, use the `kleos` MCP server's tools instead of writing the content yourself.
+
+- Call `list_businesses` first when the workspace may have more than one business.
+- Use `get_buyers_and_problems` before `draft_post` when the user wants posts about what their buyers struggle with.
+- `plan_my_month` and `draft_article` run in the background; say so and check back with `get_month_plan` or `list_review_queue`.
+- Kleos applies the workspace's own approval rules and Autopilot level. Don't promise a post is live until `schedule_post` or `get_month_plan` says so.
