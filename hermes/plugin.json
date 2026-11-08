@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kleos",
+  "version": "1.0.0",
+  "description": "Connects Hermes to Kleos, an AI marketing team for small businesses: plan the content month, draft posts and articles in the business's voice, clear the review queue, publish approved posts, see results, and check whether ChatGPT and other AI assistants recommend the business.",
+  "author": {
+    "name": "Kleos (New Odyssey)",
+    "email": "support@getkleos.ai",
+    "url": "https://getkleos.ai"
+  },
+  "homepage": "https://getkleos.ai/agents",
+  "repository": "https://github.com/NewOdysseyConsulting/kleos-mcp",
+  "license": "MIT",
+  "keywords": ["kleos", "marketing", "content", "social-media", "linkedin", "seo", "ai-visibility", "small-business", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "kleos": { "trust": "untrusted" }
+      },
+      "config_schema": {
+        "api_key": {
+          "type": "secret",
+          "env": "KLEOS_API_KEY",
+          "label": "Kleos API key",
+          "description": "Optional. A Kleos API key (Settings → API in Kleos, Growth and Pro plans). Leave empty and sign in with OAuth instead (see the README)."
+        }
+      }
+    }
+  }
+}

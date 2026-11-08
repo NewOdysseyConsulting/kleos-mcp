@@ -4,14 +4,16 @@
 newsletters in your voice, writes them through its own checks, publishes what you approve, and shows what's working on
 Google and in AI assistants.
 
-This repo holds the configuration, skill and rules for using Kleos from AI assistants and editors (Cursor, Claude,
-ChatGPT, OpenClaw and any MCP client). The server itself is hosted by Kleos.
+This repo holds the configuration, skill and rules for using Kleos from AI assistants and editors (Cursor, Hermes Agent,
+Claude, ChatGPT, OpenClaw and any MCP client). The server itself is hosted by Kleos.
 
 **Server (Streamable HTTP):** `https://app.getkleos.ai/mcp`
 
 ## Connect
 
 - **Cursor:** add `.cursor/mcp.json` from this repo (or copy the entry below) to your project or global MCP settings.
+- **Hermes Agent:** the [`hermes/`](hermes/) package (Hermes plugin catalog listing pending); see
+  [`hermes/README.md`](hermes/README.md) to install and sign in.
 - **Claude / ChatGPT:** add `https://app.getkleos.ai/mcp` as a custom connector.
 - **Any MCP client:** use the entry in [`mcp.json`](mcp.json).
 
