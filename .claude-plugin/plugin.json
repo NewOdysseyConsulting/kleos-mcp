@@ -1,0 +1,30 @@
+{
+  "name": "kleos",
+  "displayName": "Kleos",
+  "version": "1.0.0",
+  "description": "Plan, write, approve, schedule and report on a small business's marketing in Kleos.",
+  "author": {
+    "name": "New Odyssey",
+    "email": "support@getkleos.ai",
+    "url": "https://getkleos.ai"
+  },
+  "homepage": "https://getkleos.ai",
+  "repository": "https://github.com/NewOdysseyConsulting/kleos-mcp",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "content",
+    "social media",
+    "linkedin",
+    "blog",
+    "small business",
+    "seo",
+    "ai visibility",
+    "mcp"
+  ],
+  "icon": "./assets/kleos.png",
+  "documentationUrl": "https://getkleos.ai/agents",
+  "supportUrl": "https://getkleos.ai/contact",
+  "privacyPolicyUrl": "https://getkleos.ai/privacy",
+  "termsOfServiceUrl": "https://getkleos.ai/terms"
+}

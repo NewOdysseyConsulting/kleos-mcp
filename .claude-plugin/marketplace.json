@@ -1,0 +1,26 @@
+{
+  "name": "new-odyssey",
+  "owner": {
+    "name": "New Odyssey",
+    "email": "support@getkleos.ai",
+    "url": "https://getkleos.ai"
+  },
+  "description": "Plugins by New Odyssey: Kleos, the AI marketing team for small businesses.",
+  "plugins": [
+    {
+      "name": "kleos",
+      "source": "./",
+      "description": "Plan, write, approve, schedule and report on a small business's marketing in Kleos.",
+      "category": "Marketing",
+      "tags": [
+        "marketing",
+        "content",
+        "social media",
+        "linkedin",
+        "blog",
+        "small business",
+        "mcp"
+      ]
+    }
+  ]
+}
