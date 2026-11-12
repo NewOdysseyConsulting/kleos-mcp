@@ -53,8 +53,9 @@ Plugin Doctor: ~/.hermes/plugins/kleos
   registrations: 0 tool(s), 0 hook(s)
 ```
 
-`registrations: 0 tool(s)` is expected for a portable package: the twelve tools come from the remote server at session
-start, not from Python registrations, which is why `capabilities.provides_tools` in the catalog entry is empty.
+`registrations: 0 tool(s)` is expected for a portable package: the tools (31 on 12 November 2026; the README lists
+them) come from the remote server at session start, not from Python registrations, which is why
+`capabilities.provides_tools` in the catalog entry is empty.
 
 ## 3. The server through Hermes's native MCP client
 

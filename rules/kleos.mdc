@@ -11,3 +11,5 @@ business, use the `kleos` MCP server's tools instead of writing the content your
 - Use `get_buyers_and_problems` before `draft_post` when the user wants posts about what their buyers struggle with.
 - `plan_my_month` and `draft_article` run in the background; say so and check back with `get_month_plan` or `list_review_queue`.
 - Kleos applies the workspace's own approval rules and Autopilot level. Don't promise a post is live until `schedule_post` or `get_month_plan` says so.
+- To plan from results, read first (`get_results_overview`, `get_ai_questions`, `get_searches`, `get_competitor_pages`, `get_director_notes`), then fill the entries `get_open_slots` returns with `plan_calendar_entry`, citing a source from those reads. Briefs are grounded only in `get_business_facts` and `get_customer_results`.
+- When the user says what their product shipped, `record_product_update`; when they talk about what their buyers deal with day to day, `get_buyer_topics`, `confirm_buyer_topic` and `add_buyer_topic`.

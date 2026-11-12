@@ -50,13 +50,21 @@ key acts as an editor (plans, drafts and approves, but can't publish).
 
 ## Tools
 
+31 tools on 12 November 2026 (the full list, grouped, is in the [repository README](../README.md)).
+
 | Tool | Changes anything? |
 |---|---|
-| `list_businesses`, `get_month_plan`, `list_review_queue`, `get_results`, `get_buyers_and_problems` | No (read-only) |
+| `list_businesses`, `get_month_plan`, `list_review_queue`, `get_results`, `get_buyers_and_problems`, `get_business_facts`, `get_customer_results`, `get_allowances` | No (read-only) |
+| `get_results_overview`, `get_ai_questions`, `get_searches`, `get_competitor_pages`, `get_open_slots`, `get_director_notes`, `get_product_updates`, `get_buyer_topics` | No (read-only) |
 | `plan_my_month`, `draft_post`, `draft_article` | Yes: plans or drafts content in your workspace, using your plan's allowance |
+| `create_post` | Yes: saves a post in your exact words (no AI, no allowance); scheduling or posting now needs publishing permission |
 | `approve_draft` | Yes: approves a draft that's ready; your business's publishing settings then apply |
 | `schedule_post` | Yes: publishes an approved post on its connected channel (needs publishing permission) |
 | `check_ai_visibility` | Reads the latest check; with `run_now` it starts a new one, using your plan's allowance |
+| `plan_calendar_entry`, `set_slot_brief`, `record_note` | Yes: gives an open calendar entry its topic, reason and reader brief, rewrites a brief, or leaves a note on the planning record; the draft still goes through review |
+| `add_ai_question`, `add_competitor` | Yes: adds a question to the weekly AI check's list, or a brand to the competitor list (nothing runs or spends now) |
+| `record_product_update` | Yes: records what your product shipped; Kleos opens the next newsletter with it and plans one announcement post |
+| `confirm_buyer_topic`, `add_buyer_topic` | Yes: confirms, hides or adds something a buyer deals with day to day; nothing is written or planned by the call itself |
 
 The package marks the server `untrusted`, so Hermes asks you before every tool that changes something (Once, Session
 or Always) and refuses those tools in cron jobs and other runs where nobody can answer. Read-only tools run without
