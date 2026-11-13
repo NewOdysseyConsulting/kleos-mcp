@@ -160,7 +160,9 @@ claude plugin marketplace add NewOdysseyConsulting/kleos-mcp
 claude plugin install kleos@new-odyssey
 ```
 
-Then run `/mcp` once and sign in to Kleos. The plugin bundles the server and the `kleos` skill. Without the plugin:
+Then run `/mcp` once and sign in to Kleos. The plugin bundles the server and three skills: `kleos`, plus two outcome
+skills, `linkedin-from-client-problems` and `answer-reddit-questions` (see below). Install, team setup and updates:
+[`docs/CLAUDE-CODE-PLUGIN.md`](docs/CLAUDE-CODE-PLUGIN.md). Without the plugin:
 
 ```bash
 claude mcp add --transport http kleos https://app.getkleos.ai/mcp
@@ -223,6 +225,17 @@ Settings → API in Kleos). A read key acts as a viewer, a write key as an edito
 }
 ```
 
+## Skills
+
+| Skill | What it does |
+| --- | --- |
+| [`kleos`](skills/kleos/SKILL.md) | Which Kleos tool fits which job, and the rules (say what will be published first; never publish unless asked) |
+| [`linkedin-from-client-problems`](skills/linkedin-from-client-problems/SKILL.md) | Plan this week's LinkedIn entries from the business's client problems (or the person's own client notes), each with a reason and a brief; drafts wait for review |
+| [`answer-reddit-questions`](skills/answer-reddit-questions/SKILL.md) | Reply drafts for the Reddit threads Kleos found where the business's buyers ask for help. Threads come only from Kleos's tools (found through Google results); the person opens each thread and posts the reply themselves |
+| [`getkleos`](clawhub/getkleos/SKILL.md) (ClawHub) | The popular jobs through Kleos's public API and the `kleos` CLI, for OpenClaw; the API key stays in the environment or the CLI's config, never in the conversation. See [`docs/CLAWHUB.md`](docs/CLAWHUB.md) |
+
+The first three use the MCP server; Claude Code, Cursor and Hermes load them from this repository.
+
 ## For programs and directories
 
 - Server card: [`/.well-known/mcp.json`](https://app.getkleos.ai/.well-known/mcp.json), also at
@@ -240,6 +253,18 @@ Settings → API in Kleos). A read key acts as a viewer, a write key as an edito
   [webhooks](https://getkleos.ai/integrations/webhooks), both documented at [getkleos.ai/agents](https://getkleos.ai/agents).
 - Disclosure: this repository is configuration only, no local code; every tool call goes to app.getkleos.ai under the
   signed-in person's own role, plan allowance and approval settings, and is recorded in the workspace's audit log.
+
+## Distribution kit
+
+For the people listing Kleos in directories and writing about it:
+
+- [`docs/CLAUDE-CODE-PLUGIN.md`](docs/CLAUDE-CODE-PLUGIN.md): the plugin marketplace, installing, updating, and
+  Anthropic's directory
+- [`docs/CLAWHUB.md`](docs/CLAWHUB.md): the ClawHub skill, how the key stays out of the model's context, publishing
+- [`docs/AWESOME-LISTS.md`](docs/AWESOME-LISTS.md): the awesome lists that fit, each one's rules and a ready entry
+- [`docs/CHATGPT-CONNECTOR.md`](docs/CHATGPT-CONNECTOR.md): what OpenAI asks for to list Kleos in ChatGPT
+- [`docs/articles/`](docs/articles/): drafts of "Kleos + Claude Code", "Kleos + ChatGPT", "Kleos + Hermes" and
+  "Kleos + OpenClaw"
 
 ## Privacy, terms and support
 
