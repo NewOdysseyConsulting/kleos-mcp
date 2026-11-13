@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "kleos",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Connects Hermes to Kleos, an AI marketing team for small businesses: plan the content month, draft posts and articles in the business's voice, clear the review queue, publish approved posts, see results, check whether ChatGPT and other AI assistants recommend the business, plan the open calendar entries from those results, record what the product shipped, and keep what each buyer deals with day to day.",
   "author": {
     "name": "Kleos (New Odyssey)",

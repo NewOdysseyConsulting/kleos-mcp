@@ -9,6 +9,9 @@ This directory is a portable Agent Plugins v1 package for [Hermes Agent](https:/
 
 - **The Kleos MCP server** (`kleos`, Streamable HTTP at `https://app.getkleos.ai/mcp`), hosted by Kleos.
 - **The `kleos:kleos` skill**, which tells the agent when and how to use the tools, and Kleos's review rules.
+- **Two outcome skills**: `kleos:linkedin-from-client-problems` (plan this week's LinkedIn entries from the
+  business's client problems) and `kleos:answer-reddit-questions` (reply drafts for the Reddit threads Kleos found,
+  for you to read and post yourself). They are copies of the ones in the repository's `skills/`.
 
 ## Install
 
