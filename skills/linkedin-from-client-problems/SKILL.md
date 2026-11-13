@@ -63,7 +63,6 @@ person to connect Kleos first (see the `kleos` skill, or https://getkleos.ai/age
 
 ## Making it weekly
 
-Run it once a week, for example on Monday morning: "Plan this week's LinkedIn from my client problems." In Claude
-Code, a scheduled routine (`/schedule`) can run that prompt each week; the person still approves the drafts in Kleos.
-Kleos's own weekly planning also fills open entries; this skill is for when the person wants to steer LinkedIn
-themselves.
+Run it once a week, for example on Monday morning: "Plan this week's LinkedIn from my client problems." The person
+still approves the drafts in Kleos. Kleos's own weekly planning also fills open entries; this skill is for when the
+person wants to steer LinkedIn themselves.
